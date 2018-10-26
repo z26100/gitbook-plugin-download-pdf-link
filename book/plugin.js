@@ -7,19 +7,21 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
        // label can be a unique string for multi-languages site
        if (typeof label === 'object') label = label[lang];
    }
-    var base = conf.base
-    var multilingual = conf.multilingual || false
+   var base = conf.base
+   
+   var multilingual = conf.multilingual || false
 
-    if (base.slice(-1) !== "/") {
-      base += "/"
-    }
-
-    gitbook.toolbar.createButton({
+   /**
+   if (base.slice(-1) !== "/") {
+     base += "/"
+   }
+   **/
+   gitbook.toolbar.createButton({
       icon: 'fa fa-file-pdf-o',
       text: label,
       onClick: function() {
-        window.open(base + "?lang=" + lang)
+        window.open(base[link]+lang+base[extension])
       }
-    })
+   })
   })
 })
