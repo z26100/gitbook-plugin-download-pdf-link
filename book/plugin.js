@@ -21,7 +21,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       text: label,
       onClick: function() {
         console.log('+++ ' + base);
-        window.open('occ2-'+lang+'.pdf');
+        window.open('occ2_'+lang+'.pdf');
       }
    })
   })
