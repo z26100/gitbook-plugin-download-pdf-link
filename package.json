@@ -10,7 +10,10 @@
       "base": {
         "required": true,
         "title": "Base for the PDF button redirection",
-        "type": "string"
+        "type": [
+          "string",
+          "object"
+        ]
       },
       "label": {
         "default": "Download PDF",
@@ -24,8 +27,8 @@
   },
   "maintainers": [
     {
-      "email": "theo@theo.computer",
-      "name": "show0k"
+      "email": "christian.arnheiter@nttdata.com",
+      "name": "z26100"
     }
   ],
   "license": {
