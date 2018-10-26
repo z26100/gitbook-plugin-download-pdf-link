@@ -20,7 +20,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       icon: 'fa fa-file-pdf-o',
       text: label,
       onClick: function() {
-        window.open(base[link]+lang+base[extension])
+        console.log('+++ ' + base);
+        window.open('occ2-'+lang+'.pdf');
       }
    })
   })
